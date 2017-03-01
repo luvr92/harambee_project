@@ -1,0 +1,46 @@
+.objectives-section {
+  background-color: #F9F9F9;
+}
+
+.objectives-section-title {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 282px;
+  padding-left: 282px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #000000;
+}
+
+.objectives-section-container {
+  margin-top: 75px;
+
+  margin-right: 150px;
+  margin-left: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #000000;
+  font-weight: 300;
+}
+
+.objectives-section-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.objectives-section-item-icon {
+  margin: 10px;
+}
+
+.objectives-section-item-text {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 150;
+  text-align: center;
+  line-height: 22px;
+}
