@@ -25,3 +25,16 @@
   line-height: 25px;
   color: #000000;
 }
+
+.description-picture {
+  width: 100%;
+  background-color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 282px;
+  padding-left: 282px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
