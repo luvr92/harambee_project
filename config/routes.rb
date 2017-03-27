@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'agriculture', to: 'pages#agriculture'
   get 'social', to: 'pages#social'
   get 'sport', to: 'pages#sport'
+  get 'staff', to: 'pages#staff'
   resources :interns, only: [:new, :create]
   resources :volunteers, only: [:new, :create]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
