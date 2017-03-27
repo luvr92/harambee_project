@@ -1,12 +1,12 @@
 <div class="banner">
   <img src="http://placehold.it/1240x720" alt="" />
     <div class="project-banner-title">
-      <h1>INTERNSHIP</h1>
+      <h1>VOLUNTEERING</h1>
     </div>
 </div>
 <div class="application-form">
 
-  <%= simple_form_for [ @intern] do |f| %>
+  <%= simple_form_for [ @volunteer] do |f| %>
     <%= f.input :first_name, required: true, label: "First name" %>
     <%= f.input :last_name, required: true, label: "Last name" %>
     <%= f.input :accepts_treatment, as: :radio_buttons, required: true, label: "By submitting your application to us you give your permission for us to contact the current creatives you have suggested as supporters of your application. You also give your permission for us to contact the referees listed in your attached CV" %>
