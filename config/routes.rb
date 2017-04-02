@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   get 'staff', to: 'pages#staff'
   resources :interns, only: [:new, :create]
   resources :volunteers, only: [:new, :create]
+  resources :blog_posts, only: [:index, :show, :new, :create]
+  resources :diary_posts, only: [:index, :show, :new, :create]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
