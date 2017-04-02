@@ -17,6 +17,6 @@ class InternsController < ApplicationController
   private
 
   def intern_params
-    params.require(:intern).permit(:first_name, :last_name, :accepts_treatment)
+    params.require(:intern).permit(:first_name, :last_name, :accepts_treatment, :cv, :cv_cache)
   end
 end
