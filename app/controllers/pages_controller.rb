@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :project, :edu, :culture, :agriculture, :social, :sport, :staff ]
+  skip_before_action :authenticate_user!, only: [ :home, :project, :edu, :culture, :agriculture, :social, :sport, :staff, :contacts ]
 
   def home
   end
@@ -23,5 +23,8 @@ class PagesController < ApplicationController
   end
 
   def staff
+  end
+
+  def contacts
   end
 end
