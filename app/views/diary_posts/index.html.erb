@@ -1,0 +1,20 @@
+<div class="blog-border">
+  <% if @diary_posts %>
+    <% @diary_posts.each do |post| %>
+      <div class="blog-card">
+        <div>
+          <%= cl_image_tag post.photo, height: 180, width: 518, crop: :fill %>
+        </div>
+        <div class="blog-card-text-right">
+          <h6><%= l(post.created_at.to_date, format: :long) %></h6>
+          <h4><%= post.title %></h4>
+          <p>
+            <%= post.content %>
+          </p>
+          <%= link_to "Leggi tutto", diary_post_path(post), class: "navbar-wagon-button" %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+

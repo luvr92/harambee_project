@@ -2,9 +2,11 @@ class DiaryPostsController < ApplicationController
   skip_before_action :authenticate_user!
 
   def index
+    @diary_posts = DiaryPost.all
   end
 
   def show
+    @diary_post = DiaryPost.find(params[:id])
   end
 
   def new
@@ -12,9 +14,9 @@ class DiaryPostsController < ApplicationController
   end
 
   def create
-    @diary_post = DiaryPost.create(diaryg_post_params)
-    if @blog_post.save
-      redirect_to root_path, :alert => 'Thank you. Your application has been received.'
+    @diary_post = DiaryPost.create(diary_post_params)
+    if @diary_post.save
+      redirect_to root_path, :alert => 'Thank you. Your Post has been created.'
     else
       render :new
     end
