@@ -91,3 +91,34 @@
   padding-top: 50px;
   flex-direction: column;
 }
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+}
+.contact-left-column {
+  width: 500px;
+  height: 235px;
+  background: rgba(255,255,255,0.1);
+  margin: 0 40px 20px 0;
+  padding: 20px;
+  i {
+    color: black;
+    padding-right: 10px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+  }
+}
+.contact-right-column {
+  width: 500px;
+  height: 670px;
+  background: rgba(255,255,255,0.1);
+  margin-left: 40px;
+  padding: 20px;
+}

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'social', to: 'pages#social'
   get 'sport', to: 'pages#sport'
   get 'staff', to: 'pages#staff'
+  get 'contacts', to: 'pages#contacts'
   resources :interns, only: [:new, :create]
   resources :volunteers, only: [:new, :create]
   resources :blog_posts, only: [:index, :show, :new, :create]
