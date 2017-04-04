@@ -69,3 +69,29 @@
   flex-direction: column;
   margin: 35px;
 }
+
+.description-background {
+  background: url('http://res.cloudinary.com/dfeoxpejq/image/upload/c_scale,w_1227/v1491319917/Foto_in_trasparenza_Stage_lonaft.jpg');
+}
+
+.description-background-vol {
+  background: url('http://res.cloudinary.com/dfeoxpejq/image/upload/c_scale,w_1227/v1491321498/Foto_in_trasparenza_Volontariato_ngcgta.jpg');
+
+}
+
+.description-layer {
+  background-color: rgba(255, 255, 255, 0.7);;
+
+  height: 100%;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 282px;
+  padding-left: 282px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #000000;
+
+}
