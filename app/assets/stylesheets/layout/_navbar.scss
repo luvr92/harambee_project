@@ -21,6 +21,33 @@
   width: 100%;
 }
 
+.navbar-menu-container{
+  display: none;
+}
+
+.navbar-menu {
+  position: fixed;
+  left: 0px;
+  top: 80px;
+  z-index: 101;
+  width: 100%;
+  height: 80px;
+  background-color: #AF8CC0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+}
+
 /* Navbar logo */
 .navbar-wagon-brand img {
   width: 50px;
