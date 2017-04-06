@@ -3,123 +3,89 @@
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
     <%= image_tag "Gwassi.png" %>
   <% end %>
-
   <!-- Right Navigation -->
   <div class="navbar-wagon-right">
-
-
-
-
-
-
-
     <!-- Profile picture and dropdown -->
     <div class="navbar-wagon-item">
       <div class="dropdown">
-        <a class="navbar-wagon-link dropdown-toggle", id="navbar-wagon-menu", data-toggle="dropdown">CHI SIAMO</a>
+        <a class="navbar-wagon-link dropdown-toggle", id="who-we-are", data-toggle="dropdown">CHI SIAMO</a>
 
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li>
-            <%= link_to project_path do %>
-              <%= t(".profile", default: "Progetto") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to staff_path do %>
-              <%= t(".profile", default: "Staff") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to contacts_path do %>
-              <%= t(".profile", default: "Contatti") %>
-            <% end %>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-    <div class="navbar-wagon-item">
-      <div class="dropdown">
-        <a class="navbar-wagon-link dropdown-toggle", id="navbar-wagon-menu", data-toggle="dropdown">ATTIVITA'</a>
-
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li>
-            <%= link_to edu_path do %>
-              <%= t(".profile", default: "Educazione") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to social_path do %>
-              <%= t(".profile", default: "Sociale") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to culture_path do %>
-              <%= t(".sign_out", default: "Cultura") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to agriculture_path do %>
-              <%= t(".sign_out", default: "Agricoltura") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to sport_path do %>
-              <%= t(".sign_out", default: "Sport") %>
-            <% end %>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="navbar-wagon-item">
-      <div class="dropdown">
-        <a class="navbar-wagon-link dropdown-toggle", id="navbar-wagon-menu", data-toggle="dropdown">PARTI CON NOI</a>
-
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li>
-            <%= link_to new_intern_path do %>
-              <%= t(".profile", default: "Internship") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to new_volunteer_path do %>
-              <%= t(".profile", default: "Volontariato") %>
-            <% end %>
-          </li>
-        </ul>
       </div>
     </div>
     <div class="navbar-wagon-item">
       <div class="dropdown">
-        <a class="navbar-wagon-link dropdown-toggle", id="navbar-wagon-menu", data-toggle="dropdown">NEWS</a>
+        <a class="navbar-wagon-link dropdown-toggle", id="activities", data-toggle="dropdown">ATTIVITA'</a>
 
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li>
-            <%= link_to diary_posts_path do %>
-              <%= t(".profile", default: "Diario") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to blog_posts_path do %>
-              <%= t(".profile", default: "Kenya") %>
-            <% end %>
-          </li>
-        </ul>
       </div>
+    </div>
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <a class="navbar-wagon-link dropdown-toggle", id="jobapp", data-toggle="dropdown">PARTI CON NOI</a>
 
+      </div>
+    </div>
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <a class="navbar-wagon-link dropdown-toggle", id="news", data-toggle="dropdown">NEWS</a>
 
+      </div>
     </div>
     <div class="navbar-wagon-item">
       <div>
         <a href="#" class="navbar-wagon-button">SOSTIENICI</a>
       </div>
-
     </div>
-
-
   </div>
-
-
 </div>
-
+<div class="navbar-menu-container", id="who-we-are-menu">
+  <div class="navbar-menu">
+    <%= link_to project_path do %>
+      <%= t(".profile", default: "Progetto") %>
+    <% end %>
+    <%= link_to staff_path do %>
+      <%= t(".profile", default: "Staff") %>
+    <% end %>
+    <%= link_to contacts_path do %>
+      <%= t(".profile", default: "Contatti") %>
+    <% end %>
+  </div>
+</div>
+<div class="navbar-menu-container", id="activities-menu">
+  <div class="navbar-menu">
+    <%= link_to edu_path do %>
+      <%= t(".profile", default: "Educazione") %>
+    <% end %>
+    <%= link_to social_path do %>
+      <%= t(".profile", default: "Sociale") %>
+    <% end %>
+    <%= link_to culture_path do %>
+      <%= t(".sign_out", default: "Cultura") %>
+    <% end %>
+    <%= link_to agriculture_path do %>
+      <%= t(".sign_out", default: "Agricoltura") %>
+    <% end %>
+    <%= link_to sport_path do %>
+      <%= t(".sign_out", default: "Sport") %>
+    <% end %>
+  </div>
+</div>
+<div class="navbar-menu-container", id="jobapp-menu">
+  <div class="navbar-menu">
+    <%= link_to new_intern_path do %>
+      <%= t(".profile", default: "Internship") %>
+    <% end %>
+    <%= link_to new_volunteer_path do %>
+      <%= t(".profile", default: "Volontariato") %>
+    <% end %>
+  </div>
+</div>
+<div class="navbar-menu-container", id="news-menu">
+  <div class="navbar-menu">
+    <%= link_to diary_posts_path do %>
+      <%= t(".profile", default: "Diario") %>
+    <% end %>
+    <%= link_to blog_posts_path do %>
+      <%= t(".profile", default: "Kenya") %>
+    <% end %>
+  </div>
+</div>

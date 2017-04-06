@@ -5,6 +5,7 @@
 }
 
 .banner-title {
+  text-shadow: 1px 1px 1px black;
   position: absolute;
   z-index: 100;
   font-size: 22px;
@@ -17,6 +18,7 @@
 }
 
 .project-banner-title {
+  text-shadow: 1px 1px 1px black;
   position: absolute;
   z-index: 100;
   font-size: 22px;
@@ -29,18 +31,23 @@
   right: 350px;
   bottom: 300px;
 }
+.volunteer-banner {
+  background: url('http://res.cloudinary.com/dfeoxpejq/image/upload/c_scale,w_1240/v1491226879/Sfondo_Volontariato_uubzsc.jpg');
+}
 
 .volunteers-banner-title {
-  background-color: rgba(255, 255, 255, 0.1);
-  position: absolute;
+  text-shadow: 1px 1px 1px black;
+
   z-index: 100;
+  height: 100%;
+  width: 100%;
   font-size: 22px;
   font-weight: 300;
   text-align: center;
   line-height: 27px;
   color: white;
-  left: 350px;
-  top: 300px;
-  right: 350px;
-  bottom: 300px;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  padding-right: 282px;
+  padding-left: 282px;
 }
