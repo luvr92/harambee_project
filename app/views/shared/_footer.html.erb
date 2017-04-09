@@ -4,33 +4,33 @@
       <div class="footer-nav-website-item">
         <h4>CHI SIAMO</h4>
         <ul>
-          <li>Il Progetoo</li>
-          <li>Staff</li>
-          <li>Contatti</li>
+          <li><%= link_to "Il Progetto", project_path %></li>
+          <li><%= link_to "Staff", staff_path %></li>
+          <li><%= link_to "Contatti", contacts_path %></li>
         </ul>
       </div>
       <div class="footer-nav-website-item">
         <h4>COSA FACCIAMO</h4>
         <ul>
-          <li>Educazione e formazione</li>
-          <li>Arte e Turismo</li>
-          <li>Agricoltura e allevamento</li>
-          <li>Servizi Sociali</li>
-          <li>Sport</li>
+          <li><%= link_to "Educazione e formazione", edu_path %></li>
+          <li><%= link_to "Arte e Turismo", culture_path %></li>
+          <li><%= link_to "Agricoltura e allevamento", agriculture_path %></li>
+          <li><%= link_to "Servizi Sociali", social_path %></li>
+          <li><%= link_to "Sport", sport_path %></li>
         </ul>
       </div>
       <div class="footer-nav-website-item">
         <h4>PARTI CON NOI</h4>
         <ul>
-          <li>Volontariato</li>
-          <li>Internship</li>
+          <li><%= link_to "Volontariato", new_volunteer_path %></li>
+          <li><%= link_to "Internship", new_intern_path %></li>
         </ul>
       </div>
       <div class="footer-nav-website-item">
         <h4>NEWS</h4>
         <ul>
-          <li>Diario</li>
-          <li>News da Nyandiwa</li>
+          <li><%= link_to "Diario", diary_posts_path %></li>
+          <li><%= link_to "News da Nyandiwa", blog_posts_path %></li>
         </ul>
       </div>
     </div>

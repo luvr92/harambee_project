@@ -122,3 +122,45 @@
   margin-left: 40px;
   padding: 20px;
 }
+
+.donations-card-container {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 75px;
+  padding-top: 75px;
+}
+
+.donations-card-item {
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 400px;
+  margin: 20px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #000000;
+  h5 {
+    text-align: center;
+  }
+}
+
+.donations-card-item-central {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 20px;
+  text-align: left;
+  font-size: 16px;
+  max-width: 400px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #000000;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  h5 {
+    text-align: center;
+  }
+}

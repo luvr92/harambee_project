@@ -28,6 +28,7 @@
 }
 
 .objectives-section-item {
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -35,10 +36,13 @@
 }
 .objectives-section-item-icon {
   margin: 10px;
+  i {
+    color: #9d9d9d;
+  }
 }
 
 .objectives-section-item-text {
-  color: #000000;
+  color: #9d9d9d;
   font-size: 14px;
   font-weight: 150;
   text-align: center;
