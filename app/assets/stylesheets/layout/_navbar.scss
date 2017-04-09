@@ -89,11 +89,18 @@
   color: white;
   font-size: 14px;
   border: 2px solid #AF8CC0;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }
 .navbar-wagon-button:hover {
   color: white;
   background: #AF8CC0;
   border-color: white;
+
 }
 
 
