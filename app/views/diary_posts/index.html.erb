@@ -14,7 +14,7 @@
         <h6><%= l(post.created_at.to_date, format: :long) %></h6>
         <h4><%= post.title %></h4>
         <p>
-          <%= post.content %>
+          <%= post.content.truncate(150) %>
         </p>
         <%= link_to "Leggi tutto", diary_post_path(post), class: "navbar-wagon-button" %>
       </div>
