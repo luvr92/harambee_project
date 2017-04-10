@@ -1,8 +1,8 @@
 class DiaryPostsController < ApplicationController
-  skip_before_action :authenticate_user!
+  skip_before_action :authenticate_user!, only: [ :index, :show ]
 
   def index
-    @diary_posts = DiaryPost.all
+    @diary_posts = DiaryPost.all.order(created_at: :desc).first(20)
   end
 
   def show

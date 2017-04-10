@@ -82,13 +82,12 @@
 <div class="objectives-section">
   <h2 class="objectives-section-title">IN PARTNERSHIP CON</h2>
   <div class="objectives-section-container">
-    <div class="avatar"><img src="http://placehold.it/75x75" alt="" /></div>
-    <div class="avatar"><img src="http://placehold.it/75x75" alt="" /></div>
-    <div class="avatar"><img src="http://placehold.it/75x75" alt="" /></div>
-    <div class="avatar"><img src="http://placehold.it/75x75" alt="" /></div>
-    <div class="avatar"><img src="http://placehold.it/75x75" alt="" /></div>
-    <div class="avatar"><img src="http://placehold.it/75x75" alt="" /></div>
-    <div class="avatar"><img src="http://placehold.it/75x75" alt="" /></div>
-    <div class="avatar"><img src="http://placehold.it/75x75" alt="" /></div>
+    <% if @sponsors %>
+      <% @sponsors.each do |sponsor| %>
+        <div class="avatar">
+          <%= cl_image_tag sponsor.photo, height: 100, width: 100, crop: :fill %>
+        </div>
+      <% end %>
+    <% end %>
   </div>
 </div>

@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home, :project, :edu, :culture, :agriculture, :social, :sport, :staff, :contacts, :donations ]
 
   def home
+    @sponsors = Sponsor.all
   end
 
   def project
@@ -23,6 +24,7 @@ class PagesController < ApplicationController
   end
 
   def staff
+    @members = Member.all
   end
 
   def contacts

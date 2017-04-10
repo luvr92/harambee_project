@@ -1,8 +1,8 @@
 class BlogPostsController < ApplicationController
-  skip_before_action :authenticate_user!
+  skip_before_action :authenticate_user!, only: [ :index, :show ]
 
   def index
-    @blog_posts = BlogPost.all
+    @blog_posts = BlogPost.all.order(created_at: :desc).first(20)
   end
 
   def show
@@ -16,7 +16,7 @@ class BlogPostsController < ApplicationController
   def create
     @blog_post = BlogPost.create(blog_post_params)
     if @blog_post.save
-      redirect_to root_path, :alert => 'Thank you. Your application has been received.'
+      redirect_to root_path, :alert => 'Thank you. Your Post has been created.'
     else
       render :new
     end
