@@ -6,7 +6,7 @@
     <div class="description">
       <h3><%= @blog_post.title %></h3>
       <p>
-        <%= @blog_post.content %>
+        <%= auto_link(simple_format(@blog_post.content)) %>
       </p>
     </div>
   </div>
