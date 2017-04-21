@@ -3,7 +3,7 @@
     <div>
       <%= cl_image_tag @blog_post.photo, width: 780, crop: :scale %>
     </div>
-    <div class="description">
+    <div class="news-page-description">
       <h3><%= @blog_post.title %></h3>
       <p>
         <%= auto_link(simple_format(@blog_post.content)) %>
