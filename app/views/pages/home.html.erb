@@ -86,7 +86,7 @@
     <% if @sponsors %>
       <% @sponsors.each do |sponsor| %>
         <div class="avatar">
-          <%= cl_image_tag sponsor.photo, height: 100, width: 100, crop: :fill %>
+          <%= cl_image_tag sponsor.photo, width: 100, crop: :scale %>
         </div>
       <% end %>
     <% end %>

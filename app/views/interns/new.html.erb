@@ -38,6 +38,7 @@
   <%= simple_form_for [ @intern] do |f| %>
     <%= f.input :first_name, required: true, label: "First name" %>
     <%= f.input :last_name, required: true, label: "Last name" %>
+    <%= f.input :email, required: true, label: "Your Email Address" %>
     <%= f.input :cv, required: true, label: "Curriculum Vitae" %>
     <%= f.input :cv_cache, as: :hidden %>
     <%= f.input :accepts_treatment, as: :radio_buttons, required: true, label: "By submitting your application to us you give your permission for us to contact the current creatives you have suggested as supporters of your application. You also give your permission for us to contact the referees listed in your attached CV" %>

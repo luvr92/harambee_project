@@ -1,7 +1,7 @@
 <div class="blog-border">
   <div class="blog-format">
     <div>
-      <%= cl_image_tag @blog_post.photo, height: 280, width: 718, crop: :fill %>
+      <%= cl_image_tag @blog_post.photo, width: 780, crop: :scale %>
     </div>
     <div class="description">
       <h3><%= @blog_post.title %></h3>

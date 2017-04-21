@@ -1,12 +1,12 @@
 <div class="blog-border">
   <div class="blog-format">
     <div>
-      <%= cl_image_tag @diary_post.photo, height: 280, width: 718, crop: :fill %>
+      <%= cl_image_tag @diary_post.photo, width: 780, crop: :scale %>
     </div>
     <div class="description">
       <h3><%= @diary_post.title %></h3>
       <p>
-        <%= @diary_post.content %>
+        <%= auto_link(simple_format(@diary_post.content)) %>
       </p>
     </div>
   </div>
